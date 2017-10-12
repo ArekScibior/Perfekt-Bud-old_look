@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="js/slider.js"></script>
+	<link rel="shortcut icon" href="./img/favicon.ico" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>Perfekt-Bud</title>
+</head>
+<body>
+	<div id="main-header">
+		
+		<header class="container clearfix">	
+			<div class="main-logo">
+				<a href="/">
+					<img src="img/logo.png" alt="Perfekt-Bud" width="292" height="133" >
+				</a>
+			</div>
+		</header>
+			<div class="container clearfix">
+				<nav class="main-nav">
+					<ul>
+						<div class="row clearfix">
+							<a href="#main-header">
+								<div class="col-1">
+									<li>Strona Główna</li>
+								</div>
+							</a>
+							<a href="">
+								<div class="col-1">
+									<li>O nas</li>
+								</div>
+							</a>
+							<a href="">
+								<div class="col-1">
+									<li>Dlaczego My?
+									</li>
+								</div>
+							</a>
+							<a href="">
+								<div class="col-1">
+									<li>Oferta</li>
+								</div>
+							</a>
+							<a href="">
+								<div class="col-1">
+									<li>Realizacje</li>
+								</div>
+							</a>
+							<a href="">
+								<div class="col-1">
+									<li>Kontakt</li>
+								</div>
+							</a>
+						</div>
+					</ul>
+				</nav>
+			</div>
+	</div> <!-- e: main-header -->
+
+	<section class="section-slider">
+			<div class="container">
+				<div class="slider" id="main-slider">
+					<button type="button" class="left"> &lt; </button>
+					<div class="slider-cnt">
+						
+						<div class="slide active">
+							<div class="slide-image">
+								<img src="img/images2.jpg" width="1140px">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-image">
+								<img src="img/images1.jpg">
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-image">
+								<img src="img/images3.jpg">
+							</div>
+						</div>
+					</div>
+					<button type="button" class="right"> &gt; </button>
+				</div>
+			</div>
+		</section>
+
+
+		<script>
+		//------------------------------------------------------
+		//podczas scrollu dodaje headerowi klase hover
+		//------------------------------------------------------
+
+		document.addEventListener('DOMContentLoaded', function() {
+
+		let testNav = function() {
+			var top = (window.pageYOffset || document.documentElement.scrollTop)  - (document.documentElement.clientTop || 0);
+			if (top > 155) {
+				nav.classList.add('nav-scroll');
+			} else {
+				nav.classList.remove('nav-scroll');
+			}
+		};
+
+		let nav = document.querySelector('.main-nav');
+		testNav();
+		window.addEventListener('scroll', function() {
+			testNav();
+		})
+	});
+</script>
+</body>
+</html>
