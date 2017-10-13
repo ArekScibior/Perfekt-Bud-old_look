@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<script src="js/slider.js"></script>
+	<script src="js/scroll-nav.js"></script>
 	<link rel="shortcut icon" href="./img/favicon.ico" />
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<title>Perfekt-Bud</title>
+	<title>Firma Budowlana Perfekt-Bud</title>
 </head>
 <body>
 	<div id="main-header">
@@ -23,33 +24,33 @@
 					<ul>
 						<div class="row clearfix">
 							<a href="#main-header">
-								<div class="col-1">
+								<div class="col-2-12">
 									<li>Strona Główna</li>
 								</div>
 							</a>
-							<a href="">
-								<div class="col-1">
+							<a href="#About">
+								<div class="col-2-12">
 									<li>O nas</li>
 								</div>
 							</a>
 							<a href="">
-								<div class="col-1">
+								<div class="col-2-12">
 									<li>Dlaczego My?
 									</li>
 								</div>
 							</a>
 							<a href="">
-								<div class="col-1">
+								<div class="col-2-12">
 									<li>Oferta</li>
 								</div>
 							</a>
 							<a href="">
-								<div class="col-1">
+								<div class="col-2-12">
 									<li>Realizacje</li>
 								</div>
 							</a>
 							<a href="">
-								<div class="col-1">
+								<div class="col-2-12">
 									<li>Kontakt</li>
 								</div>
 							</a>
@@ -85,30 +86,70 @@
 				</div>
 			</div>
 		</section>
+		
+		<div id="About">
+			<div class="container">
+			
+				<div class="row clearfix">
+					<div class="col-8-12">
+						<div class="about-us">
+							<div class="main-title">
+								About Us
+							</div>
+							<div class="main-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni laudantium, consequatur accusantium nulla sunt ipsa commodi quos officia molestias sit incidunt. Nesciunt in possimus porro corrupti ad amet i.Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni laudantium, consequatur accusantium nulla sunt ipsa commodi quos officia molestias sit incidunt. Nesciunt in possimus porro corrupti ad amet i.Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni laudantium, consequatur accusantium nulla sunt ipsa commodi quos officia molestias sit incidunt. Nesciunt in possimus porro corrupti ad amet i.
+							</div>
+						</div>
+					</div>
+					<div class="col-4-12">
+						<div class="about-us-pic">
+							<img src="img/logo.png" alt="">
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
 
+		<div class="container">
+				
+			<div class="row clearfix">
+				<div class="col-7-12">
+					<div class="about-us">
+						<div class="main-title">
+							Why me?
+						</div>
+						<div class="main-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni laudantium, consequatur accusantium nulla sunt ipsa commodi quos officia molestias sit incidunt. Nesciunt in possimus porro corrupti ad amet i.Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni laudantium, consequatur accusantium nulla sunt ipsa commodi quos officia molestias sit incidunt. Nesciunt in possimus porro corrupti ad amet i.Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni laudantium, consequatur accusantium nulla sunt ipsa commodi quos officia molestias sit incidunt. Nesciunt in possimus porro corrupti ad amet i.
+						</div>
+					</div>
+				</div>
+				<div class="col-5-12">
+					<div class="about-us">asdasda</div>
+				</div>	
+			</div>
+				
+		</div>
 
-		<script>
-		//------------------------------------------------------
-		//podczas scrollu dodaje headerowi klase hover
-		//------------------------------------------------------
+		<div class="container">
+				
+			<div class="row clearfix">
+				<div class="col-7-12">
+					<div class="about-us">
+						<div class="main-title">
+							Offer
+						</div>
+						<div class="main-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni laudantium, consequatur accusantium nulla sunt ipsa commodi quos officia molestias sit incidunt. Nesciunt in possimus porro corrupti ad amet i.Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni laudantium, consequatur accusantium nulla sunt ipsa commodi quos officia molestias sit incidunt. Nesciunt in possimus porro corrupti ad amet i.Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni laudantium, consequatur accusantium nulla sunt ipsa commodi quos officia molestias sit incidunt. Nesciunt in possimus porro corrupti ad amet i.
+						
+						</div>
+					</div>
+				</div>
+				<div class="col-5-12">
+					<div class="about-us">asdasda</div>
+				</div>	
+			</div>
+				
+		</div>
 
-		document.addEventListener('DOMContentLoaded', function() {
-
-		let testNav = function() {
-			var top = (window.pageYOffset || document.documentElement.scrollTop)  - (document.documentElement.clientTop || 0);
-			if (top > 155) {
-				nav.classList.add('nav-scroll');
-			} else {
-				nav.classList.remove('nav-scroll');
-			}
-		};
-
-		let nav = document.querySelector('.main-nav');
-		testNav();
-		window.addEventListener('scroll', function() {
-			testNav();
-		})
-	});
-</script>
 </body>
 </html>
