@@ -100,6 +100,10 @@ $column : 12;
 .container{
     .main-nav {
         transition: 0.5s position;
+        position: fixed;
+        width:1140px;
+        top: 0;
+        z-index: 1000;
         ul {
             li {
                 width: 16.66666666666667%;
@@ -143,12 +147,8 @@ $column : 12;
     z-index: 1;
     width: 100%;
     height: 570px;
-    // background: #FCFCFC; /* Old browsers */
-    // background: -moz-linear-gradient(top, #FCFCFC 37%, #F2F5F6 72%, #CECECE 98%, #CECECE 100%, #F2F5F6 100%, #CECECE 100%); /* FF3.6-15 */
-    // background: -webkit-linear-gradient(top, #FCFCFC 37%, #F2F5F6 72%, #CECECE 98%, #CECECE 100%, #F2F5F6 100%, #CECECE 100%); /* Chrome10-25,Safari5.1-6 */
-    // background: linear-gradient(to bottom, #FCFCFC 37%, #F2F5F6 72%, #CECECE 98%, #CECECE 100%, #F2F5F6 100%, #CECECE 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#cecece', GradientType=0); /* IE6-9 */
     position: relative;
+    margin-bottom: 25px;
 }
 
 .section-slider .row,
@@ -255,8 +255,7 @@ $column : 12;
 
 .about-us, .about-us-pic {
     height: 360px;
-
-    margin-top: 25px;
+    margin-top: 50px;
     margin-bottom: 25px;
     padding: 10px;
 }
@@ -289,3 +288,67 @@ $column : 12;
 
 
 
+/*------------------------------------*/
+/* Gallery */
+/*------------------------------------*/
+
+#realize {
+}
+
+.gallery {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    .title {
+        float: left;
+        justify-content: flex-end;
+        h2 {
+            font-size: 3rem;
+            font-family: $font;
+            color: red;
+            margin-top: 20px;
+        }
+    }
+}
+
+.figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+    .photos {
+        background: #fff;
+        margin:25px 0;
+        padding: 30px;
+        width: 300px;
+        border: 1px solid #DADADA;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 200px;
+            opacity: 1;
+            flex-basis: 100%;
+        }
+        figcaption {
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        &:hover {
+            opacity: 1;
+            transition: 0.3s all linear;
+            transform: scale(1.18);
+        }
+    }
+}

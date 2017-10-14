@@ -130,6 +130,10 @@ body {
 /*------------------------------------*/
 .container .main-nav {
   transition: 0.5s position;
+  position: fixed;
+  width: 1140px;
+  top: 0;
+  z-index: 1000;
 }
 
 .container .main-nav ul li {
@@ -172,6 +176,7 @@ body {
   width: 100%;
   height: 570px;
   position: relative;
+  margin-bottom: 25px;
 }
 
 .section-slider .row,
@@ -277,7 +282,7 @@ body {
 /*------------------------------------*/
 .about-us, .about-us-pic {
   height: 360px;
-  margin-top: 25px;
+  margin-top: 50px;
   margin-bottom: 25px;
   padding: 10px;
 }
@@ -315,6 +320,81 @@ body {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
+}
+
+/*------------------------------------*/
+/* Gallery */
+/*------------------------------------*/
+.gallery {
+  background: #fff;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.gallery .title {
+  float: left;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+
+.gallery .title h2 {
+  font-size: 3rem;
+  font-family: "Agency FB", arial;
+  color: red;
+  margin-top: 20px;
+}
+
+.figure {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.figure a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.figure .photos {
+  background: #fff;
+  margin: 25px 0;
+  padding: 30px;
+  width: 300px;
+  border: 1px solid #DADADA;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.figure .photos img {
+  width: 200px;
+  opacity: 1;
+  flex-basis: 100%;
+}
+
+.figure .photos figcaption {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.figure .photos:hover {
+  opacity: 1;
+  transition: 0.3s all linear;
+  -webkit-transform: scale(1.18);
+          transform: scale(1.18);
 }
 
 /*# sourceMappingURL=main.css.map */
