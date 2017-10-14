@@ -122,6 +122,7 @@ body {
   font-size: 2.8rem;
   letter-spacing: 10px;
   font-family: "Agency FB", arial;
+  font-weight: 500;
 }
 
 /*------------------------------------*/
@@ -131,23 +132,27 @@ body {
   transition: 0.5s position;
 }
 
-.container .main-nav ul {
+.container .main-nav ul li {
+  width: 16.66666666666667%;
+  height: 60px;
+  line-height: 60px;
+  float: left;
+  display: inline-block;
+  font-family: "Agency FB", arial;
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-align: center;
+  background-color: #fff;
   border: 1px solid #DADADA;
 }
 
-.container .main-nav ul a {
-  text-decoration: none;
-  color: black;
+.container .main-nav ul li:hover {
+  background-color: #FF8E1F;
 }
 
-.container .main-nav ul a li {
-  display: inline-block;
-  font-family: "Agency FB", arial;
-  letter-spacing: 2px;
-  font-weight: 600;
-  font-size: 1.7rem;
-  padding: 10px;
-  text-align: center;
+.container .main-nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 .container .main-nav.nav-scroll {
@@ -156,16 +161,7 @@ body {
   top: 0;
   z-index: 1000;
   background: #fff;
-}
-
-[class*="col-2-12"] {
-  text-align: center;
-  background-color: #fff;
-  border: 1px solid #DADADA;
-}
-
-[class*="col-2-12"]:hover {
-  background-color: #FF8E1F;
+  height: 60px;
 }
 
 /*------------------------------------*/

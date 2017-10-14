@@ -88,6 +88,7 @@ $column : 12;
             font-size: 2.8rem;
             letter-spacing: 10px;
             font-family: $font;
+            font-weight: 500;
         }
     }
 }
@@ -100,38 +101,36 @@ $column : 12;
     .main-nav {
         transition: 0.5s position;
         ul {
-            border: 1px solid #DADADA;
-            a {
-                text-decoration: none;
-                color: black;
-                li {
-                    display: inline-block;
-                    font-family: $font;
-                    letter-spacing: 2px;
-                    font-weight: 600; 
-                    font-size: 1.7rem;
-                    padding: 10px;
-                    text-align: center;
+            li {
+                width: 16.66666666666667%;
+                height: 60px;
+                line-height: 60px;
+                float: left;
+                display: inline-block;
+                font-family: $font;
+                font-weight: 600; 
+                font-size: 1.7rem;
+                text-align: center;
+                background-color: #fff;
+                border: 1px solid #DADADA;
+                &:hover {
+                    background-color: $color;
                 }
+                a {
+                    text-decoration: none;
+                    color: black;
             }
         }
-        	//jak zaczynam scrollowac, to dodaje headerowi klase header-scroll, ktora nieco go zmienia
+    }
+        	//jak zaczynam scrollowac, to dodaje klase header-scroll, ktora nieco go zmienia
         &.nav-scroll {
             position: fixed;
             width:1140px;
             top: 0;
             z-index: 1000;
             background: #fff;
+            height: 60px;
         }
-    }
-}
-
-[class*="col-2-12"] {
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #DADADA;
-    &:hover {
-        background-color: $color;
     }
 }
 

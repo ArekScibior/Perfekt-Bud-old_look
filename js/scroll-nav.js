@@ -6,7 +6,7 @@
 
         let testNav = function() {
             var top = (window.pageYOffset || document.documentElement.scrollTop)  - (document.documentElement.clientTop || 0);
-            if (top > 155) {
+            if (top > 256) {
                 nav.classList.add('nav-scroll');
             } else {
                 nav.classList.remove('nav-scroll');
