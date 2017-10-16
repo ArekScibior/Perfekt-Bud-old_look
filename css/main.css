@@ -306,6 +306,23 @@ body {
           flex-direction: column;
 }
 
+.about-us-pic {
+  background-color: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+/*------------------------------------*/
+/* OFFER */
+/*------------------------------------*/
+.my_offer {
+  display: none;
+}
+
 .parentBtn {
   display: -webkit-box;
   display: flex;
@@ -313,7 +330,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .parentBtn .myBtn {
@@ -323,16 +340,6 @@ body {
   background-color: #FF8E1F;
   color: #fff;
   font-size: 1.3rem;
-}
-
-.about-us-pic {
-  background-color: #fff;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
 }
 
 /*------------------------------------*/
@@ -412,7 +419,7 @@ body {
 /* CONTACT */
 /*------------------------------------*/
 .contact, .form {
-  height: 480px;
+  height: 520px;
   background-color: #fff;
   padding: 30px;
 }
@@ -488,8 +495,16 @@ body {
 }
 
 .contact-us-form textarea {
-  height: 195px;
+  height: 160px;
   resize: none;
+}
+
+.contact-us-form-btn {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #A1E6D1;
 }
 
 /*# sourceMappingURL=main.css.map */
