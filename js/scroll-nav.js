@@ -18,4 +18,7 @@
 		window.addEventListener('scroll', function() {
 			testNav();
 		})
+
+		let box = document.querySelector('.container');
+			
 	});

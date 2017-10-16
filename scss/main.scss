@@ -100,10 +100,6 @@ $column : 12;
 .container{
     .main-nav {
         transition: 0.5s position;
-        position: fixed;
-        width:1140px;
-        top: 0;
-        z-index: 1000;
         ul {
             li {
                 width: 16.66666666666667%;
@@ -254,10 +250,14 @@ $column : 12;
 /*------------------------------------*/
 
 .about-us, .about-us-pic {
-    height: 360px;
+    height: 400px;
     margin-top: 50px;
     margin-bottom: 25px;
     padding: 10px;
+}
+
+.main_offer {
+    height: 450px;
 }
 
 .about-us {
@@ -272,10 +272,25 @@ $column : 12;
     .main-text {
         font-size: 1.2rem;
         color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         flex-direction: column;
+    }
+}
+
+.parentBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    .myBtn {
+        border: 0;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: $color;
+        color: #fff;
+        font-size: 1.3rem;
     }
 }
 
@@ -305,12 +320,12 @@ $column : 12;
 
     .title {
         float: left;
-        justify-content: flex-end;
-        h2 {
+        // justify-content: flex-end;
+        .gallery_title {
             font-size: 3rem;
             font-family: $font;
             color: red;
-            margin-top: 20px;
+            margin-top: 55px;
         }
     }
 }
@@ -349,6 +364,48 @@ $column : 12;
             opacity: 1;
             transition: 0.3s all linear;
             transform: scale(1.18);
+        }
+    }
+}
+
+/*------------------------------------*/
+/* CONTACT */
+/*------------------------------------*/
+
+.contact, .form {
+    height: 450px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.contact {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .main-title {
+        font-size: 2.5rem;
+        color: red;
+        font-family: $font;
+        margin-bottom: 30px;
+    }
+    .contact-text {
+        font-size: 1.5rem;
+        line-height: 30px;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
         }
     }
 }
