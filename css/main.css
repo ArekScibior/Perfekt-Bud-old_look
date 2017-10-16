@@ -412,9 +412,20 @@ body {
 /* CONTACT */
 /*------------------------------------*/
 .contact, .form {
-  height: 450px;
+  height: 480px;
   background-color: #fff;
   padding: 30px;
+}
+
+.form {
+  margin-left: 10px;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  color: red;
+  font-family: "Agency FB", arial;
+  margin-bottom: 30px;
 }
 
 .contact {
@@ -424,13 +435,6 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-}
-
-.contact .main-title {
-  font-size: 2.5rem;
-  color: red;
-  font-family: "Agency FB", arial;
-  margin-bottom: 30px;
 }
 
 .contact .contact-text {
@@ -451,6 +455,41 @@ body {
 .contact .contact-text a {
   text-decoration: none;
   color: red;
+}
+
+.contact-us-form {
+  margin-top: 40px;
+}
+
+.contact-us-form label {
+  display: none;
+  overflow: hidden;
+}
+
+.contact-us-form input[type="text"],
+.contact-us-form input[type="email"],
+.contact-us-form textarea {
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #A1E6D1;
+  height: 50px;
+  padding: 15px;
+  width: 88%;
+  margin-bottom: 28px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.contact-us-form input[type="text"]:focus,
+.contact-us-form input[type="email"]:focus,
+.contact-us-form textarea:focus {
+  border-color: #FF8E1F;
+  box-shadow: inset 0 0 0 1px #FF8E1F;
+  outline: none;
+}
+
+.contact-us-form textarea {
+  height: 195px;
+  resize: none;
 }
 
 /*# sourceMappingURL=main.css.map */
