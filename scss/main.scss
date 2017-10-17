@@ -119,9 +119,12 @@ $column : 12;
                 a {
                     text-decoration: none;
                     color: black;
+                }
+            }
+            .active {
+                background-color: $color;
             }
         }
-    }
         	//jak zaczynam scrollowac, to dodaje klase header-scroll, ktora nieco go zmienia
         &.nav-scroll {
             position: fixed;
@@ -383,6 +386,8 @@ $column : 12;
     height: 520px;
     background-color: #fff;
     padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .form {

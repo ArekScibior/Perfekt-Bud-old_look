@@ -8,15 +8,20 @@ $(function() {
          $sections.push($($(this).attr('href')));
     })
     
-    
-
-    var testHeader = function() {
-        if ($window.scrollTop() > 100) {
-            $mainNav.addClass("small");
-        } else {
-            $mainNav.removeClass("small");
-        }        
-    }
+    var autoAddClassOnScroll = function () {
+        //automatyczne dodawanie klasy przy scrollowaniu
+        //jak nie potrzeba to usun ponizsze linie
+        let active = -1;
+        $.each($sections, function(i) {          
+            if ($sections[i].offset().top <= $window.scrollTop() + $window.height()/5) {                                
+                active = i;
+            }            
+        })
+        if (active >= 0) {
+            $mainNav.find('li').removeClass('active');
+            $mainNav.find('li').eq(active).addClass('active');
+        }
+    }    
 
     $mainNav.find('a').on('click', function(e) {
         e.preventDefault();
@@ -30,7 +35,10 @@ $(function() {
             scrollTop : $target.offset().top
         }, 1000)
     });
+    $window.on('scroll', function() {
+        autoAddClassOnScroll();
+    });
 
-    testHeader();
+    autoAddClassOnScroll();
 
 })
