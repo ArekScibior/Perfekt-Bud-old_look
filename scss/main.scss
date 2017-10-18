@@ -23,9 +23,8 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e3e3e3', GradientType=1 );
 }
 .container {
-    max-width:1140px;
+    max-width: 1140px;
     margin: 0 auto;
-    // background-color: #A6A6A6;
 }
 
 .clearfix:after {
@@ -43,7 +42,7 @@ body {
 $column : 12;
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
 }
 
 @mixin clearfix() {
@@ -55,7 +54,7 @@ $column : 12;
 }
 
 .row {
-    width: 1140px;
+    max-width: 1140px;
     @include clearfix();
 }
     [class*="col-"] {
