@@ -382,7 +382,7 @@ $column : 12;
 /*------------------------------------*/
 
 .contact, .form {
-    height: 520px;
+    height: 600px;
     background-color: #fff;
     padding: 30px;
     margin-bottom: 50px;
@@ -444,7 +444,7 @@ $column : 12;
     height: 50px;
     padding: 15px;
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 15px;
     font-weight: 300;
     font-size: 1.2rem;
 
@@ -454,6 +454,18 @@ $column : 12;
         outline: none;
     }
 }
+
+    .form input[type=text].error,
+    .form input[type=email].error,
+    .form textarea.error,
+    .form .checkbox-cnt input.error ~ .state {
+        border-color:#E01546;
+    }
+    .field-error {
+        color:#E01546;
+        padding:0.5rem 0;
+        font-size:0.8rem;
+    }
 
 .contact-us-form textarea {
     height: 160px;
@@ -467,6 +479,28 @@ $column : 12;
     font-size: 18px;
     background-color: #A1E6D1;
 }
+
+.element-is-busy {
+    position: relative;
+    pointer-events: none;
+    opacity:0.5;
+}
+.element-is-busy::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(0,0,0,0.7);
+    transform: translate(-50%, -50%) rotate(0deg);
+    content:'';
+    animation: rotateSingleLoading 0.3s infinite linear;
+    z-index: 100;
+}
+
+
 
 /*------------------------------------*/
 /* CURRENT GALLERY */

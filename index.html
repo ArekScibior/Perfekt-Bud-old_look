@@ -7,12 +7,14 @@
 	<script src="js/scroll-nav.js"></script>
 	<script src="js/readMore.js"></script>
 	<script src="js/slide-scroll.js"></script>
+	<script src="./validation.js"></script>
 	<link rel="shortcut icon" href="./img/favicon.ico" />
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Firma Budowlana Perfekt-Bud</title>
 </head>
 <body>
+
 	<div id="main-header">
 		
 		<header class="container clearfix">	
@@ -234,24 +236,24 @@
 						<h2 class="main-title">
 							<span> Napisz do nas </span>
 						</h2>
-							
-						<form class="contact-us-form" method="POST" action="">
+
+						<form class="contact-us-form" method="POST" novalidate action="/send-script.php">
 							<div class="row">
 							
 								<div class="col-12-12">
-									<div>
-										<label for="formName">Imię i Nazwisko</label>
-										<input type="text" name="name" placeholder="Imię i Nazwisko" id="formName">
+									<div class='form-row'>
+										<label for="field-name">Imię i Nazwisko</label>
+										<input type="text" name="name" placeholder="Imię i Nazwisko" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
 									</div>
-									<div>
-										<label for="formEmail">Email</label>
-										<input type="email" name="email" placeholder="Email" id="formEmail">
+									<div class='form-row'>
+										<label for="field-email">Email</label>
+										<input type="email" name="email" placeholder="Email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
 									</div>
-									<div>
-										<label for="formMessage">Wiadomość</label>
-										<textarea id="formMessage" name="message" placeholder="Wiadomość"></textarea>
+									<div class='form-row'>
+										<label for="field-message">Wiadomość</label>
+										<textarea required id="field-message" name="message" placeholder="Wiadomość" required data-error="Musisz wypełnić pole" pattern=".+"></textarea>
 									</div>
-									<div>
+									<div class='form-row'>
 										<button type="submit" class="button contact-us-form-btn">Wyślij</button>
 									</div>
 								</div>
