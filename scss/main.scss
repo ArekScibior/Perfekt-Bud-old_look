@@ -381,7 +381,7 @@ $column : 12;
 /* CONTACT */
 /*------------------------------------*/
 
-.contact, .form {
+.contact, .main-form {
     height: 600px;
     background-color: #fff;
     padding: 30px;
@@ -410,11 +410,13 @@ $column : 12;
         line-height: 30px;
 
         h1 {
+            margin-top: 20px;
             font-size: 2rem;
             font-weight: bold;
         }
 
-        h2 {
+        .name {
+            margin-top: 100px;
             font-size: 2rem;
             font-weight: bold;
         }
@@ -426,19 +428,18 @@ $column : 12;
     }
 }
 
-.contact-us-form {
+.form {
     margin-top: 40px;
 }
 
-.contact-us-form label {
+.form label {
     display: none;
     overflow: hidden;
-
 }
 
-.contact-us-form input[type="text"],
-.contact-us-form input[type="email"],
-.contact-us-form textarea {
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
     font-family: 'Raleway', sans-serif;
     border: 1px solid #A1E6D1;
     height: 50px;
@@ -455,22 +456,23 @@ $column : 12;
     }
 }
 
-    .form input[type=text].error,
-    .form input[type=email].error,
-    .form textarea.error,
-    .form .checkbox-cnt input.error ~ .state {
-        border-color:#E01546;
-    }
-    .field-error {
-        color:#E01546;
-        padding:0.5rem 0;
-        font-size:0.8rem;
-    }
-
-.contact-us-form textarea {
+.form textarea {
     height: 160px;
     resize: none;
 }
+
+.form input[type=text].error,
+.form input[type=email].error,
+.form textarea.error,
+.form .checkbox-cnt input.error ~ .state {
+    border-color:#E01546;
+}
+.field-error {
+    color:#E01546;
+    padding:0.5rem 0;
+    font-size:0.8rem;
+}
+
 
 .contact-us-form-btn {
     padding: 10px;
@@ -500,6 +502,35 @@ $column : 12;
     z-index: 100;
 }
 
+.form .send-error {
+    display:inline-block;
+    font-family: sans-serif;
+    font-size:0.9rem;
+    padding:1rem 1.5rem;
+    color:#E01546;
+}
+.form-send-success {
+    font-family: sans-serif;
+    text-align:center;
+    font-size:2rem;
+    font-weight:bold;
+    border:1px solid #eee;
+    color:#333;
+    padding:10rem 0;
+    margin:3rem auto;
+    max-width:40rem;
+
+    strong {
+        display:block;
+        margin-bottom:0.5rem;
+    }
+    span {
+        font-size:1rem;
+        color:#888;
+        font-weight:normal;
+        display: block;
+    }
+}
 
 
 /*------------------------------------*/

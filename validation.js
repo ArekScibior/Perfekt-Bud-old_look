@@ -31,6 +31,7 @@ $(function() {
 
     $inputs.filter(':checkbox').on('click', function() {
         var $elem = $(this);
+        var $row = $(this).closest('.form-row');
         if ($elem.is(':checked')) {
             $elem.removeClass('error');
             hideFieldError($elem);

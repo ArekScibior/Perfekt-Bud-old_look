@@ -1,5 +1,5 @@
 <?php
-$mailToSend = 'arekc247@gmai.com';
+$mailToSend = 'perfekt-bud.biuro@wp.pl';
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$name       = $_POST['name'];
 	$email      = $_POST['email'];
@@ -15,9 +15,6 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	}
 	if ( empty( $message ) ) {
 		array_push( $errors, 'message' );
-	}
-	if ( empty( $regulation ) ) {
-		array_push( $errors, 'regulation' );
 	}
 
 	if ( count( $errors ) > 0 ) {
@@ -45,7 +42,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 			</body>
 			</html>";
 
-		if ( mail( $mailToSend, 'Wiadomość ze strony - ' . date( "d-m-Y" ), $message, $headers ) ) {
+		if ( mail( $mailToSend, 'Wiadomość z Perfekt-Bud.com - ' . date( "d-m-Y" ), $message, $headers ) ) {
 			$return['status'] = 'ok';
 		} else {
 			$return['status'] = 'error';
