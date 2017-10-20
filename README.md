@@ -19,7 +19,7 @@ Projekt strony dla rozwijającej się Firmy Budowlanej **PERFEKT-BUD**.
 -wykonaj klon danego projektu na komputer (git clone https://github.com/ArekScibior/Perfekt-Bud.git)
 -wejdź do folderu z projektem (cd Perfekt-Bud)
 -zainstaluj potrzebne pakiety (npm install / npm i)
--gulp
+-uruchom gulp (gulp)
 ```
 
 ## Możesz obejrzeć dany projekt przechodząc do strony: https://arekscibior.github.io/Perfekt-Bud/ lub http://perfekt-bud.com/
@@ -51,7 +51,7 @@ This is project for construction company **PERFEKT-BUD**.
 -make a clone (git clone https://github.com/ArekScibior/Perfekt-Bud.git)
 -enter to the clone folder (cd Perfekt-Bud)
 -install packages (npm install / npm i)
--gulp
+-run gulp (gulp)
 ```
 
 
