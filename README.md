@@ -2,7 +2,7 @@
 
 > [PL]
 
-Jest to projekt strony dla rozwijającej się Firmy Budowlanej **PERFEKT-BUD**.
+Projekt strony dla rozwijającej się Firmy Budowlanej **PERFEKT-BUD**.
 
 ## Techniki użyte w projekcie:
 
@@ -12,8 +12,17 @@ Jest to projekt strony dla rozwijającej się Firmy Budowlanej **PERFEKT-BUD**.
 - jQuery
 
 
+## Aby uruchomić lub przetestować mój projekt:
 
-## Możesz obejrzeć dany projekt przechodząc do strony: https://arekscibior.github.io/Perfekt-Bud/
+```
+-przejdź do konsoli
+-wykonaj klon danego projektu na komputer (git clone https://github.com/ArekScibior/Perfekt-Bud.git)
+-wejdź do folderu z projektem (cd Perfekt-Bud)
+-zainstaluj potrzebne pakiety (npm install / npm i)
+-gulp
+```
+
+## Możesz obejrzeć dany projekt przechodząc do strony: https://arekscibior.github.io/Perfekt-Bud/ lub http://perfekt-bud.com/
 
 
 ## Autor:
@@ -33,6 +42,17 @@ This is project for construction company **PERFEKT-BUD**.
 - SASS
 - Javascript
 - jQuery
+
+
+## Installing and tests:
+
+```
+-run console
+-make a clone (git clone https://github.com/ArekScibior/Perfekt-Bud.git)
+-enter to the clone folder (cd Perfekt-Bud)
+-install packages (npm install / npm i)
+-gulp
+```
 
 
 ## View the projekt online: https://arekscibior.github.io/Perfekt-Bud/ or http://perfekt-bud.com/
