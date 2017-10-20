@@ -2,7 +2,7 @@
 
 > [PL]
 
-Jest to projekt strony dla rozwijającej się Firmy Budowlanej PERFEKT-BUD.
+Jest to projekt strony dla rozwijającej się Firmy Budowlanej **PERFEKT-BUD**.
 
 ## Techniki użyte w projekcie:
 
@@ -24,7 +24,7 @@ Data tworzenia projektu: 20.10.2017
 
 > [ENG]
 
-This is project for construction company PERFEKT-BUD.
+This is project for construction company **PERFEKT-BUD**.
 
 
 ## Technology Used:
