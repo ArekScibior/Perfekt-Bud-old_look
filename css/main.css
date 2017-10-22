@@ -647,10 +647,10 @@ body {
 }
 
 .copyright .footer-text, .copyright .social-media {
-  color: #fff;
+  color: #DADADA;
   font-family: "Roboto", sans-serif;
   padding: 50px;
-  font-size: 1rem;
+  font-size: 13px;
 }
 
 .copyright .footer-text a, .copyright .social-media a {
