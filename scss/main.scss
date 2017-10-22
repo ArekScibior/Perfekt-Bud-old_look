@@ -397,7 +397,6 @@ $column : 12;
     height: 600px;
     background-color: #fff;
     padding: 30px;
-    margin-bottom: 50px;
     margin-top: 50px;
 }
 
@@ -569,5 +568,32 @@ $column : 12;
             width: 300px;
             border-radius: 5px;
         }
+    }
+}
+
+/*------------------------------------*/
+/* FOOTER */
+/*------------------------------------*/
+
+.copyright {
+    margin-bottom: 20px;
+    height: 100px;
+    background-color: #272822;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-text, .social-media {
+        color: #fff;
+        font-family: $font;
+        padding: 50px;
+        font-size: 1rem;
+        a {
+            text-decoration: none;
+            
+            img {
+                margin-left: 7px;
+            }
+        } 
     }
 }
