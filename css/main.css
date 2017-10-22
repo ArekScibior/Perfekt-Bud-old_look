@@ -119,9 +119,9 @@ body {
 }
 
 .container .main-logo .logo-text {
-  font-size: 2.8rem;
+  font-size: 1.7rem;
   letter-spacing: 10px;
-  font-family: "Agency FB", arial;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -144,19 +144,22 @@ body {
   float: left;
   display: inline-block;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1rem;
   text-align: center;
   background-color: #fff;
   border: 1px solid #DADADA;
+  text-transform: uppercase;
+  color: #A9A9A9;
 }
 
 .container .main-nav ul a li:hover {
   background-color: #FF8E1F;
+  color: black;
 }
 
 .container .main-nav ul .active {
   background-color: #FF8E1F;
+  color: black;
 }
 
 .container .main-nav.nav-scroll {
@@ -281,15 +284,15 @@ body {
 /* ABOUT US */
 /*------------------------------------*/
 .about-us, .about-us-pic, .Why_me {
-  height: 400px;
+  height: 350px;
   margin-top: 50px;
   margin-bottom: 25px;
   padding: 10px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .main_offer {
   height: 500px;
-  text-align: center;
 }
 
 .about-us {
@@ -297,14 +300,15 @@ body {
 }
 
 .about-us .main-title {
-  font-size: 2.5rem;
-  font-family: "Roboto", sans-serif;
-  padding-top: 10px;
-  margin-bottom: 70px;
+  font-size: 1.8rem;
+  font-family: "Nunito Sans", sans-serif;
+  padding-top: 30px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .about-us .main-text {
-  font-size: 1.3rem;
+  font-size: 1rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
@@ -320,19 +324,22 @@ body {
           align-items: center;
 }
 
+.about-us-pic img {
+  margin-top: -110px;
+}
+
 .Why_me {
   background-color: #fff;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
 }
 
 .Why_me img {
-  max-width: 300px;
-  height: 300px;
+  margin-top: 20px;
+  max-width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -373,6 +380,7 @@ body {
   justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 25px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .gallery .title {
@@ -380,9 +388,10 @@ body {
 }
 
 .gallery .title .gallery_title {
-  font-size: 3rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-family: "Nunito Sans", sans-serif;
   margin-top: 55px;
+  text-transform: uppercase;
 }
 
 .figure {
@@ -426,6 +435,7 @@ body {
 .figure .photos figcaption {
   margin-top: 20px;
   text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .figure .photos:hover {
@@ -450,9 +460,10 @@ body {
 }
 
 .main-title {
-  font-size: 2.5rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-family: "Nunito Sans", sans-serif;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .contact {
@@ -465,24 +476,32 @@ body {
 }
 
 .contact .contact-text {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 30px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.contact .contact-text h1 {
+.contact .contact-text .icons {
   margin-top: 20px;
-  font-size: 2rem;
+}
+
+.contact .contact-text .icons .web {
+  padding-left: 23px;
+}
+
+.contact .contact-text h1, .contact .contact-text .name {
+  margin-top: 10px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .contact .contact-text .name {
-  margin-top: 100px;
-  font-size: 2rem;
-  font-weight: bold;
+  margin-top: 5px;
 }
 
 .contact .contact-text a {
   text-decoration: none;
+  margin-top: 20px;
   color: red;
 }
 
@@ -606,9 +625,10 @@ body {
 }
 
 #gallery .title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.5rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
   padding: 20px;
+  text-transform: uppercase;
 }
 
 .curr-gallery {
