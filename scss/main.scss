@@ -2,7 +2,8 @@
 /* Variables */
 /*------------------------------------*/
 $color: #FF8E1F;
-$font: 'Agency FB', arial;
+$font1: 'Agency FB', arial;
+$font: 'Roboto', sans-serif;
 
 /*------------------------------------*/
 /* GLOBAL */
@@ -86,7 +87,7 @@ $column : 12;
         .logo-text {
             font-size: 2.8rem;
             letter-spacing: 10px;
-            font-family: $font;
+            font-family: $font1;
             font-weight: 500;
         }
     }
@@ -108,7 +109,7 @@ $column : 12;
                 display: inline-block;
                 font-family: $font;
                 font-weight: 600; 
-                font-size: 1.7rem;
+                font-size: 1.4rem;
                 text-align: center;
                 background-color: #fff;
                 border: 1px solid #DADADA;
@@ -251,7 +252,7 @@ $column : 12;
 /* ABOUT US */
 /*------------------------------------*/
 
-.about-us, .about-us-pic {
+.about-us, .about-us-pic, .Why_me {
     height: 400px;
     margin-top: 50px;
     margin-bottom: 25px;
@@ -259,24 +260,21 @@ $column : 12;
 }
 
 .main_offer {
-    height: 450px;
+    height: 500px;
+    text-align: center;
 }
 
 .about-us {
     background-color: #fff;
     .main-title {
-        font-size: 3rem;
-        color: red;
+        font-size: 2.5rem;
         font-family: $font;
-        margin-bottom: 30px;
+        padding-top: 10px;
+        margin-bottom: 70px;
     }
     
     .main-text {
-        font-size: 1.2rem;
-        color: black;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
+        font-size: 1.3rem;
         flex-direction: column;
     }
 }
@@ -286,6 +284,19 @@ $column : 12;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.Why_me {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 300px;
+        height: 300px; 
+        border-radius: 50%;
+    }
 }
 
 /*------------------------------------*/
@@ -333,7 +344,6 @@ $column : 12;
         .gallery_title {
             font-size: 3rem;
             font-family: $font;
-            color: red;
             margin-top: 55px;
         }
     }
@@ -343,6 +353,7 @@ $column : 12;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 30px;
     a {
         text-decoration: none;
         color: black;
@@ -350,7 +361,7 @@ $column : 12;
     }
     .photos {
         background: #fff;
-        margin:25px 0;
+        margin:25px;
         padding: 30px;
         width: 300px;
         border: 1px solid #DADADA;
@@ -361,7 +372,7 @@ $column : 12;
         flex-direction: column;
 
         img {
-            width: 200px;
+            width: 250px;
             opacity: 1;
             flex-basis: 100%;
         }
@@ -395,7 +406,6 @@ $column : 12;
 
 .main-title {
     font-size: 2.5rem;
-    color: red;
     font-family: $font;
     margin-bottom: 30px;
 }
@@ -541,9 +551,8 @@ $column : 12;
     margin-top: 20px;
 
     .title {
-        font-family: $font;
+        font-family: 'Roboto', sans-serif;
         font-size: 2.5rem;
-        color: red;
         padding: 20px;
     }
 }
