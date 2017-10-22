@@ -132,7 +132,12 @@ body {
   transition: 0.5s position;
 }
 
-.container .main-nav ul li {
+.container .main-nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.container .main-nav ul a li {
   width: 16.66666666666667%;
   height: 60px;
   line-height: 60px;
@@ -146,13 +151,8 @@ body {
   border: 1px solid #DADADA;
 }
 
-.container .main-nav ul li:hover {
+.container .main-nav ul a li:hover {
   background-color: #FF8E1F;
-}
-
-.container .main-nav ul li a {
-  text-decoration: none;
-  color: black;
 }
 
 .container .main-nav ul .active {

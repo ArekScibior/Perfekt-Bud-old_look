@@ -101,24 +101,25 @@ $column : 12;
     .main-nav {
         transition: 0.5s position;
         ul {
-            li {
-                width: 16.66666666666667%;
-                height: 60px;
-                line-height: 60px;
-                float: left;
-                display: inline-block;
-                font-family: $font;
-                font-weight: 600; 
-                font-size: 1.4rem;
-                text-align: center;
-                background-color: #fff;
-                border: 1px solid #DADADA;
-                &:hover {
-                    background-color: $color;
-                }
-                a {
-                    text-decoration: none;
-                    color: black;
+            a {
+                text-decoration: none;
+                color: black;
+           
+                li {
+                    width: 16.66666666666667%;
+                    height: 60px;
+                    line-height: 60px;
+                    float: left;
+                    display: inline-block;
+                    font-family: $font;
+                    font-weight: 600; 
+                    font-size: 1.4rem;
+                    text-align: center;
+                    background-color: #fff;
+                    border: 1px solid #DADADA;
+                    &:hover {
+                        background-color: $color;
+                    }
                 }
             }
             .active {
