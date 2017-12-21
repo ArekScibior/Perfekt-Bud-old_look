@@ -55,7 +55,7 @@ This is project for construction company **PERFEKT-BUD**.
 ```
 
 
-## View the projekt online: https://arekscibior.github.io/Perfekt-Bud/ or http://perfekt-bud.com/
+## View the project online: https://arekscibior.github.io/Perfekt-Bud/ or http://perfekt-bud.com/
 
 
 ## Author:
