@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/loader.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
 	<script src="js/slider.js"></script>
 	<script src="js/readMore.js"></script>
 	<script src="js/slide-scroll.js"></script>
@@ -22,7 +20,7 @@
 	<div class="header">
 		<div class="container">
 			<header class="main-header">
-				<a href="../index.html"><img class="main-logo" src="img/logo.png" height="70px" width="130px" alt="Perfekt-Bud"></a>
+				<a href="/"><img class="main-logo" src="img/logo.png" height="70px" width="130px" alt="Perfekt-Bud"></a>
 				<nav class="main-nav">
 					<ul>
 						<a href="#wrap"><li>Strona Głowna</li></a>
@@ -40,8 +38,7 @@
 		<div class="container">
 			<div class="slider" id="main-slider">
 				<button type="button" class="left"> &lt; </button>
-				<div class="slider-cnt">
-					
+				<div class="slider-cnt">	
 					<div class="slide">
 						<div class="slide-image">
 							<img src="img/images1.jpg">
@@ -59,8 +56,7 @@
 	</section>
 		
 	<article id="About">
-		<div class="container">
-			
+		<div class="container">	
 			<div class="row-grid clearfix">
 				<div class="col-8-12">
 					<div class="about-us">
@@ -84,8 +80,7 @@
 	</article>
 
 	<article id="Why">
-		<div class="container">
-			
+		<div class="container">	
 			<div class="row clearfix">
 				<div class="about-us">
 					<div class="col-md-6">
@@ -108,8 +103,7 @@
 	</article>
 
 	<article id="Offer">
-		<div class="container">
-					
+		<div class="container">			
 			<div class="row-grid clearfix">
 				<div class="col-12-12">
 					<div class="about-us main_offer">
@@ -136,8 +130,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
-					
+			</div>				
 		</div>
 	</article>
 
@@ -217,23 +210,21 @@
 							<span> Napisz do nas </span>
 						</h2>
 						<form class="form" id="contactForm" method="POST" novalidate action="/send-script.php">
-							
-								<div class="form-row">
-									<label for="field-name">Imię i Nazwisko</label>
-									<input type="text" name="name" placeholder="Imię i Nazwisko" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
-								</div>
-								<div class="form-row">
-									<label for="field-email">Email</label>
-									<input type="email" name="email" placeholder="Email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
-								</div>
-								<div class="form-row">
-									<label for="field-message">Wiadomość</label>
-									<textarea name="message" placeholder="Wiadomość" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
-								</div>
-								<div class='form-row'>
-									<button type="submit" class="button contact-us-form-btn">Wyślij</button>
-								</div>
-
+							<div class="form-row">
+								<label for="field-name">Imię i Nazwisko</label>
+								<input type="text" name="name" placeholder="Imię i Nazwisko" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+							</div>
+							<div class="form-row">
+								<label for="field-email">Email</label>
+								<input type="email" name="email" placeholder="Email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+							</div>
+							<div class="form-row">
+								<label for="field-message">Wiadomość</label>
+								<textarea name="message" placeholder="Wiadomość" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+							</div>
+							<div class='form-row'>
+								<button type="submit" class="button contact-us-form-btn">Wyślij</button>
+							</div>
 						</form>
 					</div>
 				</div>
@@ -261,6 +252,6 @@
 				</div>
 			</div>
 		</div>
-		</div>
+	</div>
 </body>
 </html>
