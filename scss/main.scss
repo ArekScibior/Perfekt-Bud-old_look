@@ -12,6 +12,10 @@ $main-font: 'Nunito Sans', sans-serif;
 * {
     box-sizing: border-box;
 }
+
+.row {
+    margin: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -55,7 +59,7 @@ $column : 12;
     }
 }
 
-.row {
+.row-grid {
     max-width: 1140px;
     @include clearfix();
 }
@@ -71,73 +75,57 @@ $column : 12;
 
 
 /*------------------------------------*/
-/* LOGO */
+/* HEADER */
 /*------------------------------------*/
-
+.header {
+    width: 100%;
+    height: 77px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 10001;
+    box-shadow: 0 4px 2px -2px gray;
+}
 .container {
-    .main-logo {
+    .main-header {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        height: 77px;
+
         img {
             display: inline-block;
-            display: block;
+            line-height: 77px;
         }
-        .logo-text {
-            font-size: 1.7rem;
-            letter-spacing: 10px;
-            font-family: $main-font;
-            font-weight: 500;
+
+        .main-nav li.active a {
+            font-weight: bold;
         }
-    }
-}
 
-/*------------------------------------*/
-/* MENU */
-/*------------------------------------*/
+        .main-nav {
+            float: right;
+            text-align: right;
+            padding-right: 6px;
+            padding-left: 12px;
+            word-spacing: 2px;
+            font-size: 15px;
+            line-height: 77px;
 
-.container{
-    .main-nav {
-        transition: 0.5s position;
-        ul {
+            ul {
+                list-style: none;           
+            }
             a {
                 text-decoration: none;
                 color: black;
-           
                 li {
-                    width: 16.66666666666667%;
-                    height: 60px;
-                    line-height: 60px;
-                    float: left;
                     display: inline-block;
-                    font-family: $font;
-                    font-size: 1rem;
-                    text-align: center;
-                    background-color: #fff;
-                    border: 1px solid #DADADA;
-                    text-transform: uppercase;
-                    color: #A9A9A9;
+                    font-family: "Nunito Sans", sans-serif;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    padding: 10px;
+
                     &:hover {
-                        background-color: $color;
-                        color: black;
+                        color: $color;
                     }
                 }
             }
-            .active {
-                background-color: $color;
-                color: black;
-            }
-        }
-        	//jak zaczynam scrollowac, to dodaje klase header-scroll, ktora nieco go zmienia
-        &.nav-scroll {
-            position: fixed;
-            width:1140px;
-            top: 0;
-            z-index: 1000;
-            background: #fff;
-            height: 60px;
         }
     }
 }
@@ -155,7 +143,7 @@ $column : 12;
     margin-bottom: 25px;
 }
 
-.section-slider .row,
+.section-slider .row-grid,
 .section-slider .container {
     height: 100%;
 }
@@ -263,11 +251,10 @@ $column : 12;
     margin-bottom: 25px;
     padding: 10px;
     font-family: $main-font;
-
 }
 
 .main_offer {
-    height: 500px;
+    height: auto;
 }
 
 .about-us {
@@ -284,6 +271,11 @@ $column : 12;
         font-size: 1rem;
         flex-direction: column;
     }
+    .pic {
+        width: 472px;
+        height: 310px;
+        margin-left: 33px;
+    }
 }
 
 .about-us-pic {
@@ -293,7 +285,8 @@ $column : 12;
     align-items: center;
     
     img {
-        margin-top: -110px; 
+        margin-top: -110px;
+        max-width: 100%; 
     }
 }
 
@@ -305,9 +298,9 @@ $column : 12;
 
     img {
         margin-top: 20px;
-        max-width: 200px;
+        max-width: 100%;
         height: 200px; 
-        border-radius: 50%;
+        width: 250px; 
     }
 }
 
@@ -339,17 +332,12 @@ $column : 12;
 /* Gallery */
 /*------------------------------------*/
 
-#realize {
-}
-
 .gallery {
     background: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     margin-top: 50px;
     margin-bottom: 25px;
     font-family: $main-font;
+    margin-top: 50px;
 
     .title {
         float: left;
@@ -357,9 +345,23 @@ $column : 12;
         .gallery_title {
             font-size: 1.8rem;
             font-family: $main-font;
-            margin-top: 55px;
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-bottom: 30px;
             text-transform: uppercase;
         }
+    }
+    .checkAll-btn {
+        text-decoration: none;
+        display: inline-block;
+        border: 0;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: $color;
+        color: #fff;
+        font-size: 1.3rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
@@ -368,6 +370,17 @@ $column : 12;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 30px;
+    
+    .left-pic {
+        float: right;
+        margin-left: -77px;
+    }
+    
+    .right-pic {
+        float: left;
+        margin-right: -50px;
+    }
+
     a {
         text-decoration: none;
         color: black;
@@ -375,30 +388,29 @@ $column : 12;
     }
     .photos {
         background: #fff;
-        margin:25px;
+        margin:0px;
+        margin-top: 30px;
         padding: 30px;
-        width: 300px;
-        border: 1px solid #DADADA;
+        width: 510px;
+        border: 1px solid $color;
         border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
         img {
-            width: 250px;
-            opacity: 1;
-            flex-basis: 100%;
+            width: 460px;
         }
         figcaption {
             margin-top: 20px;
             text-decoration: none;
             font-family: $main-font;
         }
-        &:hover {
-            opacity: 1;
-            transition: 0.3s all linear;
-            transform: scale(1.18);
+    }
+    .right {
+        height: 374px;
+        .pic-right {
+            height: 258px;
         }
     }
 }
@@ -564,14 +576,35 @@ $column : 12;
         display: block;
     }
 }
+/*------------------------------------*/
+/* CURRENT GALLERY */
+/*------------------------------------*/
 
+.realize-gallery {
+    background-color: #fff;
+    margin-top: 77px;
+    .gallery_title {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: "Nunito Sans", sans-serif;
+        margin-left: 30px;
+        margin-top: 40px;
+        margin-bottom: 20px;   
+    }
+
+    .build {
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+}
 
 /*------------------------------------*/
 /* CURRENT GALLERY */
 /*------------------------------------*/
 #gallery {
     background-color: #fff;
-    margin-top: 20px;
+    margin-top: 77px;
 
     .title {
         font-family: $main-font;
@@ -601,7 +634,7 @@ $column : 12;
 
 .copyright {
     margin-bottom: 20px;
-    height: 100px;
+    height: 70px;
     background-color: #272822;
     display: flex;
     justify-content: space-between;
@@ -621,3 +654,5 @@ $column : 12;
         } 
     }
 }
+
+

@@ -3,45 +3,39 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/loader.js"></script>	
 	<script src="js/slider.js"></script>
-	<script src="js/scroll-nav.js"></script>
 	<script src="js/readMore.js"></script>
 	<script src="js/slide-scroll.js"></script>
 	<script src="./validation.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="shortcut icon" href="./img/favicon.ico" />
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Firma Budowlana Perfekt-Bud</title>
 </head>
-
-<body>
-
-	<div id="main-header">
-		
-		<header class="container clearfix">	
-			<div class="main-logo">
-				<a href="/">
-					<img src="img/logo.png" alt="Perfekt-Bud" width="439" height="200" >
-				</a>
-				<h1 class="logo-text">FIRMA BUDOWLANA</h1>
-			</div>
-		</header>
-
-	<div class="container clearfix">
-		<nav class="main-nav">
-			<ul>
-				<a href="#main-header"><li>Strona Główna</li></a>
-				<a href="#About"><li>O nas</li></a>
-				<a href="#Why"><li>Dlaczego My?</li></a>
-				<a href="#Offer"><li>Oferta</li></a>
-				<a href="#realize"><li>Realizacje</li></a>
-				<a href="#main-contact"><li>Kontakt</li></a>
-			</ul>
-		</nav>
+<body>		
+	<div id="wrap"></div>
+	<div class="header">
+		<div class="container">
+			<header class="main-header">
+				<a href="/"><img class="main-logo" src="img/logo.png" height="70px" width="130px" alt="Perfekt-Bud"></a>
+				<nav class="main-nav">
+					<ul>
+						<a href="#wrap"><li>Strona Głowna</li></a>
+						<a href="#About"><li>O nas</li></a>
+						<a href="#Why"><li>Dlaczego My?</li></a>
+						<a href="#Offer"><li>Oferta</li></a>
+						<a href="#realize"><li>Realizacje</li></a>
+						<a href="#main-contact"><li>Kontakt</li></a>
+					</ul>		
+				</nav>
+			</header>
+		</div>
 	</div>
-
 	<section class="section-slider">
 		<div class="container">
 			<div class="slider" id="main-slider">
@@ -67,7 +61,7 @@
 	<article id="About">
 		<div class="container">
 			
-			<div class="row clearfix">
+			<div class="row-grid clearfix">
 				<div class="col-8-12">
 					<div class="about-us">
 						<div class="main-title">
@@ -93,8 +87,8 @@
 		<div class="container">
 			
 			<div class="row clearfix">
-				<div class="col-8-12">
-					<div class="about-us">
+				<div class="about-us">
+					<div class="col-md-6">
 						<div class="main-title">
 							Dlaczego Perfekt-Bud?
 						</div>
@@ -103,13 +97,10 @@
 							Zapewniamy najwyższą jakość realizowanych przez nas prac.  Nasze zaplecze budowlane i nowoczesny sprzęt zapewni sprawną realizację zleceń.
 							<br>
 							<strong>UDZIELAMY GWARANCJI NASZYCH USŁUG!</strong>
-							
 						</div>
 					</div>
-				</div>
-				<div class="col-4-12">
-					<div class="Why_me">
-						<img src="img/buildtools.jpg" alt="Build Tools">
+					<div class="col-md-6">
+						<img class="pic" src="images/logo-o-nas.jpg" alt="about us picture">
 					</div>
 				</div>	
 			</div>
@@ -119,7 +110,7 @@
 	<article id="Offer">
 		<div class="container">
 					
-			<div class="row clearfix">
+			<div class="row-grid clearfix">
 				<div class="col-12-12">
 					<div class="about-us main_offer">
 						<div class="main-title">
@@ -154,34 +145,39 @@
 	<div id="realize">
 		<div class="container">
 			<div class="gallery">
-				<div class="title">
-					<h2 class="gallery_title">Realizacje</h2>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="title">
+							<h2 class="gallery_title">Realizacje</h2>
+						</div>
+					</div>
 				</div>
-				<div class="figure">
-					<a href="./Realizacje/niedrzwica.html">
-						<figure class="photos">
-							<img src="img/Niedrzwica1.jpg" alt="">
-							<figcaption>
-								Niedrzwica Duża
-							</figcaption>
-						</figure>
-					</a>
-					<a href="./Realizacje/Plouszowice.html">
-						<figure class="photos">
-							<img src="img/Plouszowice.jpg" alt="">
-							<figcaption>
-								Płouszowice
-							</figcaption>
-						</figure>
-					</a>
-					<a href="./Realizacje/Klinkier.html">
-						<figure class="photos">
-							<img src="img/Klinkier.jpg" alt="">
-							<figcaption>
-								Lublin (Klinkier)
-							</figcaption>
-						</figure>
-					</a>
+				<div class="row text-center">
+					<div class="figure">
+						<div class="col-md-6">
+							<a href="./Realizacje/niedrzwica.html" class=" left-pic">
+								<figure class="photos">
+									<img src="img/Profilowe/Niedrzwica1.jpg" alt="">
+									<figcaption>
+										Niedrzwica Duża
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="col-md-6">
+							<a href="./Realizacje/Krepiec.html" class="right-pic">
+								<figure class="photos right">
+									<img class="pic-right" src="img/Profilowe/Krepiec.jpg" alt="">
+									<figcaption>
+										Krępiec
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center btn-row">
+					<a href="./Realizacje/realizacje.html" class="checkAll-btn">Zobacz wszystkie</a>
 				</div>													
 			</div>
 		</div>
@@ -190,7 +186,7 @@
 	<div id="main-contact">
 		<div class="container">
 						
-			<div class="row clearfix">
+			<div class="row-grid clearfix">
 				<div class="col-6-12">
 					<div class="contact">
 						<h2 class="main-title">
@@ -220,31 +216,31 @@
 					<div class="main-form">
 						<h2 class="main-title">
 							<span> Napisz do nas </span>
-                        </h2>
-                        <form class="form" id="contactForm" method="POST" novalidate action="/send-script.php">
-                            
-                                <div class="form-row">
-                                    <label for="field-name">Imię i Nazwisko</label>
-                                    <input type="text" name="name" placeholder="Imię i Nazwisko" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
-                                </div>
-                                <div class="form-row">
-                                    <label for="field-email">Email</label>
-                                    <input type="email" name="email" placeholder="Email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
-                                </div>
-                                <div class="form-row">
-                                    <label for="field-message">Wiadomość</label>
-                                    <textarea name="message" placeholder="Wiadomość" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
-                                </div>
-                                <div class='form-row'>
-                                    <button type="submit" class="button contact-us-form-btn">Wyślij</button>
-                                </div>
+						</h2>
+						<form class="form" id="contactForm" method="POST" novalidate action="/send-script.php">
+							
+								<div class="form-row">
+									<label for="field-name">Imię i Nazwisko</label>
+									<input type="text" name="name" placeholder="Imię i Nazwisko" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+								</div>
+								<div class="form-row">
+									<label for="field-email">Email</label>
+									<input type="email" name="email" placeholder="Email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+								</div>
+								<div class="form-row">
+									<label for="field-message">Wiadomość</label>
+									<textarea name="message" placeholder="Wiadomość" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+								</div>
+								<div class='form-row'>
+									<button type="submit" class="button contact-us-form-btn">Wyślij</button>
+								</div>
 
-                        </form>
+						</form>
 					</div>
 				</div>
 			</div>
-        </div>
-    </div>
+		</div>
+	</div>
 
 	<div class="footer">
 		<div class="container">
@@ -266,6 +262,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
+		</div>
 </body>
 </html>

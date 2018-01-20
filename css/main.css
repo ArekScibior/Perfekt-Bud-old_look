@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+.row {
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -35,11 +39,11 @@ body {
   max-width: 1140px;
 }
 
-.row {
+.row-grid {
   max-width: 1140px;
 }
 
-.row:after {
+.row-grid:after {
   content: "";
   display: table;
   clear: both;
@@ -98,77 +102,60 @@ body {
 }
 
 /*------------------------------------*/
-/* LOGO */
+/* HEADER */
 /*------------------------------------*/
-.container .main-logo {
+.header {
   width: 100%;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  height: 77px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 10001;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
-.container .main-logo img {
+.container .main-header {
+  width: 100%;
+  height: 77px;
+}
+
+.container .main-header img {
   display: inline-block;
-  display: block;
+  line-height: 77px;
 }
 
-.container .main-logo .logo-text {
-  font-size: 1.7rem;
-  letter-spacing: 10px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 500;
+.container .main-header .main-nav li.active a {
+  font-weight: bold;
 }
 
-/*------------------------------------*/
-/* MENU */
-/*------------------------------------*/
-.container .main-nav {
-  transition: 0.5s position;
+.container .main-header .main-nav {
+  float: right;
+  text-align: right;
+  padding-right: 6px;
+  padding-left: 12px;
+  word-spacing: 2px;
+  font-size: 15px;
+  line-height: 77px;
 }
 
-.container .main-nav ul a {
+.container .main-header .main-nav ul {
+  list-style: none;
+}
+
+.container .main-header .main-nav a {
   text-decoration: none;
   color: black;
 }
 
-.container .main-nav ul a li {
-  width: 16.66666666666667%;
-  height: 60px;
-  line-height: 60px;
-  float: left;
+.container .main-header .main-nav a li {
   display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  text-align: center;
-  background-color: #fff;
-  border: 1px solid #DADADA;
-  text-transform: uppercase;
-  color: #A9A9A9;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px;
 }
 
-.container .main-nav ul a li:hover {
-  background-color: #FF8E1F;
-  color: black;
-}
-
-.container .main-nav ul .active {
-  background-color: #FF8E1F;
-  color: black;
-}
-
-.container .main-nav.nav-scroll {
-  position: fixed;
-  width: 1140px;
-  top: 0;
-  z-index: 1000;
-  background: #fff;
-  height: 60px;
+.container .main-header .main-nav a li:hover {
+  color: #FF8E1F;
 }
 
 /*------------------------------------*/
@@ -182,7 +169,7 @@ body {
   margin-bottom: 25px;
 }
 
-.section-slider .row,
+.section-slider .row-grid,
 .section-slider .container {
   height: 100%;
 }
@@ -292,7 +279,7 @@ body {
 }
 
 .main_offer {
-  height: 500px;
+  height: auto;
 }
 
 .about-us {
@@ -314,6 +301,12 @@ body {
           flex-direction: column;
 }
 
+.about-us .pic {
+  width: 472px;
+  height: 310px;
+  margin-left: 33px;
+}
+
 .about-us-pic {
   background-color: #fff;
   display: -webkit-box;
@@ -326,6 +319,7 @@ body {
 
 .about-us-pic img {
   margin-top: -110px;
+  max-width: 100%;
 }
 
 .Why_me {
@@ -338,9 +332,9 @@ body {
 
 .Why_me img {
   margin-top: 20px;
-  max-width: 200px;
+  max-width: 100%;
   height: 200px;
-  border-radius: 50%;
+  width: 250px;
 }
 
 /*------------------------------------*/
@@ -374,13 +368,10 @@ body {
 /*------------------------------------*/
 .gallery {
   background: #fff;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 25px;
   font-family: "Nunito Sans", sans-serif;
+  margin-top: 50px;
 }
 
 .gallery .title {
@@ -390,8 +381,23 @@ body {
 .gallery .title .gallery_title {
   font-size: 1.8rem;
   font-family: "Nunito Sans", sans-serif;
-  margin-top: 55px;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 30px;
   text-transform: uppercase;
+}
+
+.gallery .checkAll-btn {
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #FF8E1F;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .figure {
@@ -402,6 +408,16 @@ body {
   padding-bottom: 30px;
 }
 
+.figure .left-pic {
+  float: right;
+  margin-left: -77px;
+}
+
+.figure .right-pic {
+  float: left;
+  margin-right: -50px;
+}
+
 .figure a {
   text-decoration: none;
   color: black;
@@ -410,10 +426,11 @@ body {
 
 .figure .photos {
   background: #fff;
-  margin: 25px;
+  margin: 0px;
+  margin-top: 30px;
   padding: 30px;
-  width: 300px;
-  border: 1px solid #DADADA;
+  width: 510px;
+  border: 1px solid #FF8E1F;
   border-radius: 5px;
   display: -webkit-box;
   display: flex;
@@ -427,9 +444,7 @@ body {
 }
 
 .figure .photos img {
-  width: 250px;
-  opacity: 1;
-  flex-basis: 100%;
+  width: 460px;
 }
 
 .figure .photos figcaption {
@@ -438,11 +453,12 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
-.figure .photos:hover {
-  opacity: 1;
-  transition: 0.3s all linear;
-  -webkit-transform: scale(1.18);
-          transform: scale(1.18);
+.figure .right {
+  height: 374px;
+}
+
+.figure .right .pic-right {
+  height: 258px;
 }
 
 /*------------------------------------*/
@@ -619,9 +635,32 @@ body {
 /*------------------------------------*/
 /* CURRENT GALLERY */
 /*------------------------------------*/
+.realize-gallery {
+  background-color: #fff;
+  margin-top: 77px;
+}
+
+.realize-gallery .gallery_title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.realize-gallery .build {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+/*------------------------------------*/
+/* CURRENT GALLERY */
+/*------------------------------------*/
 #gallery {
   background-color: #fff;
-  margin-top: 20px;
+  margin-top: 77px;
 }
 
 #gallery .title {
@@ -656,7 +695,7 @@ body {
 /*------------------------------------*/
 .copyright {
   margin-bottom: 20px;
-  height: 100px;
+  height: 70px;
   background-color: #272822;
   display: -webkit-box;
   display: flex;

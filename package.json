@@ -18,6 +18,7 @@
   },
   "homepage": "",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
     "react-router": "^3.0.3"
