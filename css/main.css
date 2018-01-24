@@ -310,8 +310,6 @@ body {
 
 .about-us-pic {
   background-color: #fff;
-  display: -webkit-box;
-  display: flex;
   -webkit-box-pack: center;
           justify-content: center;
   -webkit-box-align: center;
@@ -319,7 +317,7 @@ body {
 }
 
 .about-us-pic img {
-  margin-top: -110px;
+  margin-top: 25px;
   max-width: 100%;
 }
 
