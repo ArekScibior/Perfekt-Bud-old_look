@@ -272,8 +272,8 @@ $column : 12;
         flex-direction: column;
     }
     .pic {
-        width: 472px;
-        height: 310px;
+        max-width: 472px;
+        max-height: 310px;
         margin-left: 33px;
         margin-top: 15px;
     }
@@ -281,11 +281,12 @@ $column : 12;
 
 .about-us-pic {
     background-color: #fff;
+    display: flex;
     justify-content: center;
     align-items: center;
     
     img {
-        margin-top: 25px;
+        margin-top: -110px;
         max-width: 100%; 
     }
 }
@@ -365,21 +366,18 @@ $column : 12;
     }
 }
 
+.pic {
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+
 .figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 30px;
-    
-    .left-pic {
-        float: right;
-        margin-left: -77px;
-    }
-    
-    .right-pic {
-        float: left;
-        margin-right: -50px;
-    }
 
     a {
         text-decoration: none;
