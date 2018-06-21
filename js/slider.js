@@ -22,8 +22,8 @@ sliderCnt[0].classList.add("active");
 
     previous.addEventListener("click", function (){
         i--;
-        if (counter < 0) {
-            counter = sliderCnt.length - 1;
+        if (i < 0) {
+            i = sliderCnt.length - 1;
             sliderCnt[i].classList.add("active");
             sliderCnt[0].classList.remove("active");
         } else {
