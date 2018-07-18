@@ -22,7 +22,7 @@ Projekt strony dla rozwijającej się Firmy Budowlanej **PERFEKT-BUD**.
 -uruchom gulp (gulp)
 ```
 
-## Możesz obejrzeć dany projekt przechodząc do strony: https://arekscibior.github.io/Perfekt-Bud/ lub http://perfekt-bud.com/
+## Możesz obejrzeć dany projekt przechodząc do strony: http://perfekt-bud.com/
 
 
 ## Autor:
@@ -55,7 +55,7 @@ This is project for construction company **PERFEKT-BUD**.
 ```
 
 
-## View the project online: https://arekscibior.github.io/Perfekt-Bud/ or http://perfekt-bud.com/
+## View the project online: http://perfekt-bud.com/
 
 
 ## Author:
